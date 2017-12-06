@@ -4,9 +4,8 @@
 
 import javax.swing.JOptionPane;
 
-
 public class GradedActivity {
-    private double score;
+    private double score; //we can access this in the GradedActivity class, but not outside
     
     //setScore only allows scores between 0 and 100
     public void setScore(double s){
@@ -23,7 +22,7 @@ public class GradedActivity {
         return score;
     }
     
-    //getGrade finds and returns the letter  grade associated with that score
+    //getGrade finds and returns the letter grade associated with that score
     public char getGrade(){
         if (score >= 90){
             return 'A';
